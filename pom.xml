@@ -146,7 +146,7 @@
     <webwolf.port>9090</webwolf.port>
     <wiremock.version>2.27.2</wiremock.version>
     <xml-resolver.version>1.2</xml-resolver.version>
-    <xstream.version>1.4.5</xstream.version>
+    <xstream.version>1.4.20</xstream.version>
     <!-- do not update necessary for lesson -->
     <zxcvbn.version>1.8.0</zxcvbn.version>
   </properties>
@@ -154,7 +154,14 @@
   <dependencyManagement>
     <dependencies>
 
-      <dependency>
+    <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy -->
+    <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version>3.0.20</version>
+    </dependency>
+      
+    <dependency>
         <groupId>org.ow2.asm</groupId>
         <artifactId>asm</artifactId>
         <version>9.5</version>
@@ -422,6 +429,7 @@
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-test</artifactId>
+      <version>6.2.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
